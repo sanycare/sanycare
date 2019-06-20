@@ -1,0 +1,133 @@
+body {
+  --text: #85888b;
+  --green: #00c443;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("trianglify.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: var(--text);
+}
+body.index {
+  background-image: url("../matthew-henry-49707-unsplash.jpg");
+}
+.title {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 40px;
+}
+div.white-bkg {
+    background-image: url("trianglify.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+p {
+    text-align: justify;
+}
+.right-clipped > img {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    shape-outside: polygon(100% 0, 75% 100%, 0 100%, 0 0);
+    float: left;
+    margin-right: 10px;
+}
+.left-clipped > img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    float: right;
+    margin-left: 10px;
+}
+.right-clipped > p, .left-clipped > p {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.left-clipped > p {
+    display: inline;
+}
+#menu {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px var(--text);
+    color: white;
+    transition: opacity 1s;
+}
+#menu.hidden {
+    opacity: 0;
+}
+#home {
+    width: 100%;
+    min-height: 100vh;
+}
+#links {
+    background-color: #FFFFFF;
+}
+#links > .type {
+    display: block;
+    width:100%;
+    height: 25vh;
+}
+.height50 {
+    min-height: 25vh;
+}
+
+.image-bkg {
+    background-position: center;
+    background-size: contain;
+}
+@media screen and (min-device-width: 540px) {
+    #links > .type {
+        display: inline-block;
+        vertical-align: middle;
+        width:50%;
+        height: 50vh;
+    }
+
+    .height50 {
+        height: 50vh;
+    }
+
+    .image-bkg {
+        background-attachment: fixed;
+    }
+}
+a.type {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+}
+.all-centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#arrow_scroll {
+    font-size:140px;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 44px);
+    color: var(--green)
+}
+.green { color: var(--green);}
+
+.contacts > a {
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--green);
+    text-decoration: none;
+}
+.contacts > a > img {
+    position: relative;
+    top: 3px;
+}
