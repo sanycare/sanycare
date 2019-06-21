@@ -14,25 +14,29 @@
 
     <link rel="stylesheet" href="assets/style.css" />
 
+
+    <link rel="stylesheet" href="assets/cocoen/css/cocoen.min.css" />
+    <script type="text/javascript" src="assets/cocoen/js/cocoen.min.js"></script>
+
     <meta name="viewport" content="width=device-width">
 </head>
 <body class="index">
     <div id="home" class="all-centered-content">
         <img src="logo_vertical_small.png" alt="Logo Sanycare" id="logo" />
-        <i class="fa fa-angle-double-down" id="arrow_scroll"></i>
+        <i class="fa fa-angle-double-down" id="arrow_scroll_sanycare"></i>
     </div>
     <div id="links">
         <a class="type" href="centrales-de-traitement-d-air/index.html">
             <div class="all-centered-content height50 image-bkg" style="background-image: url('assets/Air_Treatment_Solutions/small/1b_APRES.JPG')">
-                <p class="title"><i class="fa fa-wind"></i> Centrale de traitement d'air</p>
+                <p class="title links-title"><i class="fa fa-wind"></i> Centrale de traitement d'air</p>
             </div>
         </a><a class="type" href="tours-de-refroidissement/index.html">
             <div class="all-centered-content height50 image-bkg" style="background-image: url('assets/Cooling_Tower_Solutions/small/1b_APRES1.JPG')">
-                <p class="title"><i class="fa fa-tint"></i> Tours de refroidissement</p>
+                <p class="title links-title"><i class="fa fa-tint"></i> Tours de refroidissement</p>
             </div>
         </a><a class="type" href="echangeur-multitubulaire/index.html">
             <div class="all-centered-content height50 image-bkg" style="background-image: url('assets/Tubesheet_Solutions/small/IMG_9306.JPG')">
-                <p class="title"><i class="fa fa-fan"></i> Echangeurs multitubulaires</p>
+                <p class="title links-title"><i class="fa fa-fan"></i> Echangeurs multitubulaires</p>
             </div>
         </a><div class="type">
             <div class="all-centered-content height50">
@@ -52,6 +56,21 @@
                 </p>
             </div>
         </div>
+        <i class="fa fa-angle-double-down" id="arrow_scroll_safetycare"></i>
+    </div>
+    <div id="safety-care">
+        <div id="safety-care-logo">
+            <img src="assets/logo-safetycare-vertical.png" />
+            <blockquote>
+                Ouais, c'est pas faux
+                <cite>Johan Scotte, 2019</cite>
+            </blockquote>
+        </div>
+        <div class="cocoen">
+            <img src='assets/SafetyCare/small/1-PhotoAvant.jpeg' alt="">
+            <img src='assets/SafetyCare/small/2-PhotoApres.jpeg' alt="">
+        </div>
+    </div>
 <!--    <div class="white-bkg">-->
 <!--        <div class="right-clipped">-->
 <!--            <img src="https://picsum.photos/200/300" alt="" data-aos="fade-right"/>-->
@@ -75,16 +94,24 @@
 <!--    <div id="menu" class="hidden">-->
 <!--        <img src="logo_vertical_small.png" alt="Logo Sanycare" height="59px" />-->
 <!--    </div>-->
-<!--    <script type="text/javascript">-->
-<!--        AOS.init();-->
-<!--        var logo = document.getElementById('logo');-->
-<!--        document.addEventListener('scroll', function() {-->
-<!--            if(logo.getBoundingClientRect().top < 0) {-->
-<!--                document.getElementById('menu').classList.remove('hidden');-->
-<!--            } else {-->
-<!--                document.getElementById('menu').classList.add('hidden');-->
-<!--            }-->
-<!--        });-->
-<!--    </script>-->
+    <script type="text/javascript">
+        // var links = document.getElementById('links').getBoundingClientRect().top;
+        // var scrolling = false;
+        // document.addEventListener('scroll', function() {
+        //     var currentScroll = window.scrollY;
+        //     if(currentScroll > 150 && !scrolling && currentScroll < links) {
+        //         window.scrollTo(0, links);
+        //     }
+        //     // if(logo.getBoundingClientRect().top < 0) {
+        //     //     document.getElementById('menu').classList.remove('hidden');
+        //     // } else {
+        //     //     document.getElementById('menu').classList.add('hidden');
+        //     // }
+        //
+        // });
+        document.querySelectorAll('.cocoen').forEach(function(element){
+            new Cocoen(element);
+        });
+    </script>
 </body>
 </html>

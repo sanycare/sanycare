@@ -1,6 +1,7 @@
 body {
   --text: #85888b;
   --green: #00c443;
+  --yellow: #fcab00;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -19,9 +20,42 @@ body {
 body.index {
   background-image: url("matthew-henry-49707-unsplash.jpg");
 }
-.title {
+.title, blockquote {
     font-family: 'Kodchasan', sans-serif;
     font-size: 40px;
+}
+
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    max-width: 100%;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
 }
 div.white-bkg {
     background-image: url("trianglify.png");
@@ -71,10 +105,18 @@ p {
 }
 #links {
     background-color: #FFFFFF;
+    position: relative;
 }
 #links > .type {
     display: block;
     width:100%;
+}
+#safety-care {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url("trianglify.png");
 }
 
 .image-bkg {
@@ -95,12 +137,14 @@ a.type {
     justify-content: center;
     align-items: center;
 }
-#arrow_scroll {
-    font-size:80px;
-    position: absolute;
+
+#arrow_scroll_sanycare {color: var(--green)}
+#arrow_scroll_safetycare {color: var(--yellow)}
+#arrow_scroll_sanycare, #arrow_scroll_safetycare {
+    font-size:40px;
     bottom: 5px;
-    left: calc(50% - 25px);
-    color: var(--green)
+    position: absolute;
+    left: calc(50% - 12px);
 }
 .green { color: var(--green);}
 
@@ -118,6 +162,10 @@ a.type {
     margin-top:82px;/*menu's height*/
 }
 
+.cocoen {
+    max-width: 100vw;
+}
+
 /*
  * MOBILE ONLY
  */
@@ -125,7 +173,7 @@ a.type {
     .height50 {
         min-height: 25vh;
     }
-    .title {
+    .links-title {
         padding: 20px;
         font-size: 20px;
         font-weight: bold;
@@ -136,6 +184,9 @@ a.type {
     .contacts {padding:20px;}
 
     .smallBlock {display: block}
+    #safety-care {
+        flex-direction: column;
+    }
 }
 
 /*
@@ -156,7 +207,7 @@ a.type {
     .image-bkg {
         background-attachment: fixed;
     }
-    #arrow_scroll {
+    #arrow_scroll_sanycare, #arrow_scroll_safetycare {
         font-size:140px;
         left: calc(50% - 44px);
     }
