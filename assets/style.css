@@ -123,7 +123,7 @@ p {
 
 .image-bkg {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 a.type {
     color: #FFFFFF;
@@ -206,9 +206,6 @@ a.type {
         height: 50vh;
     }
 
-    .image-bkg {
-        background-attachment: fixed;
-    }
     #arrow_scroll_sanycare, #arrow_scroll_safetycare {
         font-size:140px;
         left: calc(50% - 44px);
