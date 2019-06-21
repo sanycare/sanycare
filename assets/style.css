@@ -17,7 +17,7 @@ body {
   color: var(--text);
 }
 body.index {
-  background-image: url("../matthew-henry-49707-unsplash.jpg");
+  background-image: url("matthew-henry-49707-unsplash.jpg");
 }
 .title {
     font-family: 'Kodchasan', sans-serif;
@@ -75,16 +75,72 @@ p {
 #links > .type {
     display: block;
     width:100%;
-    height: 25vh;
-}
-.height50 {
-    min-height: 25vh;
 }
 
 .image-bkg {
     background-position: center;
     background-size: contain;
 }
+a.type {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+}
+.type {
+    background-color: white;
+}
+.all-centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#arrow_scroll {
+    font-size:80px;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 25px);
+    color: var(--green)
+}
+.green { color: var(--green);}
+
+.contacts > a {
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--green);
+    text-decoration: none;
+}
+.contacts > a > img {
+    position: relative;
+    top: 3px;
+}
+.content {
+    margin-top:82px;/*menu's height*/
+}
+
+/*
+ * MOBILE ONLY
+ */
+@media screen and (max-device-width: 540px) {
+    .height50 {
+        min-height: 25vh;
+    }
+    .title {
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    img#logo_home {height: 100px}
+
+    .contacts {padding:20px;}
+
+    .smallBlock {display: block}
+}
+
+/*
+ * DESKTOP ONLY
+ */
 @media screen and (min-device-width: 540px) {
     #links > .type {
         display: inline-block;
@@ -100,34 +156,8 @@ p {
     .image-bkg {
         background-attachment: fixed;
     }
-}
-a.type {
-    color: #FFFFFF;
-    text-decoration: none;
-    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
-}
-.all-centered-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#arrow_scroll {
-    font-size:140px;
-    position: absolute;
-    bottom: 5px;
-    left: calc(50% - 44px);
-    color: var(--green)
-}
-.green { color: var(--green);}
-
-.contacts > a {
-    font-size: 16px;
-    line-height: 16px;
-    color: var(--green);
-    text-decoration: none;
-}
-.contacts > a > img {
-    position: relative;
-    top: 3px;
+    #arrow_scroll {
+        font-size:140px;
+        left: calc(50% - 44px);
+    }
 }
