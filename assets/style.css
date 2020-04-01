@@ -1,7 +1,11 @@
+@import "page.css";
+
 body {
   --text: #85888b;
+  --darkGrey: #666;
   --green: #00c443;
   --yellow: #fcab00;
+  --radius: 20px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -17,6 +21,7 @@ body {
   overflow-x: hidden;
   color: var(--text);
 }
+
 body.index {
   background-image: url("matthew-henry-49707-unsplash.jpg");
 }
@@ -85,20 +90,6 @@ p {
 .left-clipped > p {
     display: inline;
 }
-#menu {
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 1px 1px 5px var(--text);
-    color: white;
-    transition: opacity 1s;
-}
-#menu.hidden {
-    opacity: 0;
-}
 #home {
     width: 100%;
     min-height: 100vh;
@@ -120,6 +111,9 @@ p {
     width: 100%;
     height: 100vh;
 }
+#safety-care-text  {flex-grow: 1; max-width: 50%; text-align: center}
+#safety-care-text * {text-align: center}
+#safety-care-illus {flex-grow: 2; max-height: 100%; overflow: hidden; margin:20px;}
 
 .image-bkg {
     background-position: center;
@@ -159,9 +153,6 @@ a.type {
 .contacts > a > img {
     position: relative;
     top: 3px;
-}
-.content {
-    margin-top:82px;/*menu's height*/
 }
 
 .cocoen {

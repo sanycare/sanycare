@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanycare :: Centrale de traitement d'air</title>
+    <link rel="stylesheet" href="assets/animate.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/cocoen/css/cocoen.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <script type="text/javascript" src="assets/cocoen/js/cocoen.min.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="block animated fadeInLeft">
+        <div class="image">
+            <div class="cocoen" style="width: 800px">
+                <img src='assets/Air_Treatment_Solutions/small/1_AVANT.JPG' alt="">
+                <img src='assets/Air_Treatment_Solutions/small/1b_APRES.JPG' alt="">
+            </div>
+        </div>
+        <div class="text">
+            <h2>Hygiénisation</h2>
+            <ul>
+                <li>Nettoyage conventionnel des parois</li>
+                <li>Décapage haute pression des échangeurs avec Agent <b class="green">Sany</b><b>CleanerⓇ</b></li>
+                <li>Décontamination par saturation avec micro-diffusion d’un agent biocide, fongicide et bactéricide</li>
+                <li>Validation microbiologique par ATP-Métrie</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block animated fadeInLeft delay-200ms">
+        <div class="image">
+            <div class="cocoen" style="width: 800px">
+                <img src='assets/Air_Treatment_Solutions/small/2_AVANT.jpg' alt="">
+                <img src='assets/Air_Treatment_Solutions/small/2b_APRES.jpg' alt="">
+            </div>
+        </div>
+        <div class="text">
+            <h2>Rénovation</h2>
+            <ul>
+                <li>Application de résines <b class="green">Sany</b><b>CoatingⓇ</b> AHU spécialement formulées pour évoluer dans les CTA (ni COV, ni solvants)</li>
+                <li>Remplacement de parois, création de panneaux d’accès</li>
+                <li>Remplacement de pièces de rechange, standards ou sur-mesure (Ventilation, batteries, bacs à condensats, manchettes, registres, sondes, ….)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block animated fadeInLeft delay-400ms">
+        <div class="text">
+            <h2>Modernisation</h2>
+            <ul>
+                <li>Conversion de ventilations (de poulies-courroies vers roue libre)</li>
+                <li>Mise en place de motorisations à faible consommation énergétique et variation de vitesse.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block animated fadeInLeft delay-600ms">
+        <div class="text">
+            <h2>Expertise</h2>
+            <ul>
+                <li>Réalisation d’audits d’état et de fonctionnement</li>
+                <li>Réalisation d’expertises avec inventaire détaillé</li>
+                <li>Fourniture de rapports avec photos, observations et recommandations</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="menu">
+    <a href="site.html" id="back"><img src="logo_vertical_small.png" alt="Logo Sanycare"/></a>
+    <a href="centrales-de-traitement-d-air.html" class="active"><i class="fa fa-wind"></i> Centrale de traitement d'air</a>
+    <a href="tours-de-refroidissement.html"><i class="fa fa-tint"></i> Tours de refroidissement</a>
+    <a href="echangeur-multitubulaire.html"><i class="fa fa-fan"></i> Échangeurs multitubulaires</a>
+    <a href="contact.html" id="contact"><b class="green">Nous</b> <b>contacter</b></a>
+</div>
+<script type="text/javascript">
+    document.querySelectorAll('.cocoen').forEach(function(element){
+        new Cocoen(element);
+    });
+    window.addEventListener('scroll', function(e) {
+        if (window.scrollY > 100 ) {
+            document.getElementById('menu').classList.add('scrolled');
+        } else {
+            document.getElementById('menu').classList.remove('scrolled');
+        }
+    });
+</script>
+<!--        <a id="credit" style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@peterlaster?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pedro Lastra"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Photo by Pedro Lastra</span></a>-->
+</body>
+</html>
