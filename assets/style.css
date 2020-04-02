@@ -97,6 +97,7 @@ p {
 #home > h1 {
     font-family: 'Kodchasan', sans-serif;
     color: var(--darkGrey);
+    text-shadow: 0 0 3px rgba(255, 255, 255, 1);
 }
 #links {
     background-color: #FFFFFF;
