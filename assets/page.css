@@ -17,16 +17,19 @@ html {
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
 }
 .block > .text {
-    order: 2;
     padding: 10px;
 }
 .block > .image {
-    order: 1;
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
 }
 
-b.green {
+.block a {
+    color: var(--darkGrey);
+    text-decoration: none;
+}
+
+.green, a.green {
     color: var(--green);
 }
 #menu {

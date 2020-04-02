@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanycare :: 404</title>
+    <link rel="stylesheet" href="assets/animate.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/cocoen/css/cocoen.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <script type="text/javascript" src="assets/cocoen/js/cocoen.min.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="block animated fadeInLeft">
+        <div class="text">
+            <h2>Oups... :)</h2>
+            Cette page n'existe pas !<br/>
+            Vous pouvez utiliser le menu en haut, ou <a href="site" class="green">retouner à l'accueil</a>
+        </div>
+    </div>
+</div>
+<div id="menu">
+    <a href="site" id="back"><img src="logo_vertical_small.png" alt="Logo Sanycare"/></a>
+    <a href="centrales-de-traitement-d-air"><i class="fa fa-wind"></i> Centrale de traitement d'air</a>
+    <a href="tours-de-refroidissement"><i class="fa fa-tint"></i> Tours de refroidissement</a>
+    <a href="echangeur-multitubulaire"><i class="fa fa-fan"></i> Échangeurs multitubulaires</a>
+    <a href="contact" id="contact"><b class="green">Nous</b> <b>contacter</b></a>
+</div>
+<script>
+    window.addEventListener('scroll', function(e) {
+        if (window.scrollY > 100 ) {
+            document.getElementById('menu').classList.add('scrolled');
+        } else {
+            document.getElementById('menu').classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>
