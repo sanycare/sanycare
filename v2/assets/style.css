@@ -117,6 +117,7 @@ p {
     height: 100vh;
 }
 #safety-care-text  {flex-grow: 1; max-width: 50%; text-align: center}
+#safety-care-text ul li {list-style-type: none;}
 #safety-care-text * {text-align: center}
 #safety-care-illus {flex-grow: 2; max-height: 100%; overflow: hidden; margin:20px;}
 
