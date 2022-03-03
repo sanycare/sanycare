@@ -1,0 +1,108 @@
+html {
+    scrollbar-width: none;
+}
+.content {
+    font-family: 'Kodchasan', sans-serif;
+    color: var(--darkGrey);
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: var(--radius);
+    margin: 60px auto;
+    max-width: 80%;
+    overflow:hidden;
+    box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
+}
+.block > .text {
+    padding: 10px;
+}
+.block > .image {
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.block a {
+    color: var(--darkGrey);
+    text-decoration: none;
+}
+
+.green, a.green {
+    color: var(--green);
+}
+#menu {
+    font-family: 'Kodchasan', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px var(--text);
+    color: white;
+    transition: all 1s;
+}
+#menu a {
+    color: var(--darkGrey);
+    text-decoration: none;
+}
+#menu a.active {
+    border-bottom: 4px solid var(--green);
+    color: var(--darkGrey);
+    height: 100%;
+}
+#menu a.active > i {
+    color: var(--green)
+}
+#menu #back {
+    height: 60px;
+    transition: height 1s;
+}
+#menu #back img {
+    height: 60px;
+    transition: height 1s;
+}
+#menu.scrolled {
+    width: calc(100% - 4px);
+    padding: 2px;
+}
+#menu.scrolled #back {height: 30px;}
+#menu.scrolled #back img {
+    height:30px;
+}
+#menu #contact {
+    /*margin-left: auto;*/
+}
+#menu.hidden {
+    opacity: 0;
+}
+
+.content {
+    margin-top:100px;/*menu's height*/
+}
+
+.delay-200ms {animation-delay: 200ms;}
+.delay-400ms {animation-delay: 400ms;}
+.delay-600ms {animation-delay: 600ms;}
+.delay-800ms {animation-delay: 800ms;}
+
+/*
+ * MOBILE ONLY
+ */
+@media screen and (max-device-width: 540px) {
+    .block {
+        flex-direction: column;
+    }
+    .block > .text {
+        order: 1;
+    }
+    .block > .image {
+        order: 2;
+    }
+}
