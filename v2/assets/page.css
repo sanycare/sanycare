@@ -9,6 +9,7 @@ html {
 .block {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: white;
     border-radius: var(--radius);
     margin: 60px auto;
@@ -105,4 +106,8 @@ html {
     .block > .image {
         order: 2;
     }
+}
+
+.margin-top-10 {
+    margin-top:10px;
 }
