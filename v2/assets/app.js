@@ -37,3 +37,11 @@ function initSlider(suffix) {
     main.mount();
     thumbnail.mount();
 }
+
+window.addEventListener('scroll', function(e) {
+    if (window.scrollY > 100 ) {
+        document.getElementById('menu').classList.add('scrolled');
+    } else {
+        document.getElementById('menu').classList.remove('scrolled');
+    }
+});
