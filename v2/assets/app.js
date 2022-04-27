@@ -2,7 +2,8 @@ function initSlider(suffix) {
     var mainSettings = {
         type : 'slide',
         perPage: 2,
-        arrows : false,
+        gap: 10,
+        arrows : true,
         cover : true,
         fixedHeight: 400
     };
@@ -17,6 +18,7 @@ function initSlider(suffix) {
         focus : 'center',
         pagination : false,
         cover : true,
+        arrows: false,
         dragMinThreshold: {
             mouse: 4,
             touch: 10,

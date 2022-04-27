@@ -17,6 +17,9 @@ html {
     overflow:hidden;
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
 }
+.block.space-around {
+    justify-content: space-around;
+}
 .block > .text {
     padding: 10px;
 }
