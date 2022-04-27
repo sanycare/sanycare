@@ -169,6 +169,8 @@ a.type {
  * MOBILE ONLY
  */
 @media screen and (max-device-width: 540px) {
+    .mobile-only {display: block;}
+    .desktop-only {display: none;}
     .height50 {
         min-height: 25vh;
     }
@@ -192,6 +194,8 @@ a.type {
  * DESKTOP ONLY
  */
 @media screen and (min-device-width: 540px) {
+    .mobile-only {display: none;}
+    .desktop-only {display: block;}
     #links > .type {
         display: inline-block;
         vertical-align: middle;
