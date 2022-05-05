@@ -98,6 +98,7 @@ p {
     font-family: 'Kodchasan', sans-serif;
     color: var(--darkGrey);
     text-shadow: 0 0 3px rgba(255, 255, 255, 1);
+    text-align: center;
 }
 #links {
     background-color: #FFFFFF;
@@ -107,18 +108,18 @@ p {
     display: block;
     width:100%;
 }
-#safety-care {
+#footer {
+    padding:40px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background: url("trianglify.png");
-    width: 100%;
-    height: 100vh;
+    width: calc(100% - 80px);
 }
-#safety-care-text  {flex-grow: 1; max-width: 50%; text-align: center}
-#safety-care-text * {text-align: center}
-#safety-care-illus {flex-grow: 2; max-height: 100%; overflow: hidden; margin:20px;}
+#footer #logo_home {
+    height: 150px;
+}
 
 .image-bkg {
     background-position: center;
@@ -140,12 +141,15 @@ a.type {
 }
 
 #arrow_scroll_sanycare {color: var(--green)}
-#arrow_scroll_safetycare {color: var(--yellow)}
 #arrow_scroll_sanycare, #arrow_scroll_safetycare {
     font-size:40px;
     bottom: 5px;
     position: absolute;
     left: calc(50% - 12px);
+}
+#arrow_scroll_safetycare {
+    color: var(--yellow);
+    bottom: -20px;
 }
 .green { color: var(--green);}
 
@@ -168,6 +172,8 @@ a.type {
  * MOBILE ONLY
  */
 @media screen and (max-device-width: 540px) {
+    .mobile-only {display: block;}
+    .desktop-only {display: none;}
     .height50 {
         min-height: 25vh;
     }
@@ -175,6 +181,9 @@ a.type {
         padding: 20px;
         font-size: 20px;
         font-weight: bold;
+    }
+    #footer {
+        flex-direction: column;
     }
     
     img#logo_home {height: 100px}
@@ -191,6 +200,8 @@ a.type {
  * DESKTOP ONLY
  */
 @media screen and (min-device-width: 540px) {
+    .mobile-only {display: none;}
+    .desktop-only {display: block;}
     #links > .type {
         display: inline-block;
         vertical-align: middle;
@@ -206,4 +217,30 @@ a.type {
         font-size:140px;
         left: calc(50% - 44px);
     }
+}
+
+.image-grid {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 320px 320px;
+}
+.image-grid img {
+    margin: 10px;
+    width: 100px;
+}
+figcaption {
+    width: calc(100% - 10px);
+    background: rgba(0,0,0,.4);
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+}
+.owl-carousel figure {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
