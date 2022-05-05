@@ -98,6 +98,7 @@ p {
     font-family: 'Kodchasan', sans-serif;
     color: var(--darkGrey);
     text-shadow: 0 0 3px rgba(255, 255, 255, 1);
+    text-align: center;
 }
 #links {
     background-color: #FFFFFF;
@@ -140,12 +141,15 @@ a.type {
 }
 
 #arrow_scroll_sanycare {color: var(--green)}
-#arrow_scroll_safetycare {color: var(--yellow)}
 #arrow_scroll_sanycare, #arrow_scroll_safetycare {
     font-size:40px;
     bottom: 5px;
     position: absolute;
     left: calc(50% - 12px);
+}
+#arrow_scroll_safetycare {
+    color: var(--yellow);
+    bottom: -20px;
 }
 .green { color: var(--green);}
 
@@ -177,6 +181,9 @@ a.type {
         padding: 20px;
         font-size: 20px;
         font-weight: bold;
+    }
+    #footer {
+        flex-direction: column;
     }
     
     img#logo_home {height: 100px}
