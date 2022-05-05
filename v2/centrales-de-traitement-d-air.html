@@ -130,11 +130,34 @@
     </div>
 </div>
 <div id="menu">
-    <a href="/" id="back"><img src="logo_vertical_small.png" alt="Logo Sanycare"/></a>
-    <a href="centrales-de-traitement-d-air" class="active"><i class="fa fa-wind"></i> Centrale de traitement d'air</a>
+    <div class="desktop-only">
+        <div class="menu-items">
+            <a href="/" class="back"><img src="logo_vertical_small.png" alt="Logo Sanycare"/></a>
+            <a id="centrales-de-traitement-d-air" href="centrales-de-traitement-d-air"><i class="fa fa-wind"></i> Centrales de traitement d'air</a>
+            <a id="tours-de-refroidissement" href="tours-de-refroidissement"><i class="fa fa-tint"></i> Tours de refroidissement</a>
+            <a id="echangeur-multitubulaire" href="echangeur-multitubulaire"><i class="fa fa-fan"></i> Échangeurs multitubulaires</a>
+            <a id="safety-care" href="safety-care"><i class="fa fa-user-shield"></i> <span class="orange">Safety</span>Care</a>
+            <a id="contact" href="contact"><b class="green">Nous</b> <b>contacter</b></a>
+        </div>
+    </div>
+    <div class="mobile-only">
+        <div class="menu-items">
+            <a href="/" class="back"><img src="logo_vertical_small.png" alt="Logo Sanycare"/></a>
+            <i class="fa fa-bars" id="burger"></i>
+        </div>
+    </div>
+</div>
+<div id="menu-mobile">
+    <a href="/" class="back"><img src="logo_vertical_small.png" alt="Logo Sanycare"/></a>
+    <a href="centrales-de-traitement-d-air"><i class="fa fa-wind"></i> Centrales de traitement d'air</a>
     <a href="tours-de-refroidissement"><i class="fa fa-tint"></i> Tours de refroidissement</a>
     <a href="echangeur-multitubulaire"><i class="fa fa-fan"></i> Échangeurs multitubulaires</a>
-    <a href="contact" id="contact"><b class="green">Nous</b> <b>contacter</b></a>
+    <a href="safety-care"><i class="fa fa-user-shield"></i> <span class="orange">Safety</span>Care</a>
+    <a href="contact"><i class="fa fa-mobile-alt"></i> Nous contacter</a>
+    <div id="closeButton">
+        <div class="icon"><i class="fa fa-times"></i></div>
+        Fermer
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js" ></script>

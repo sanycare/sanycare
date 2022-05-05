@@ -107,19 +107,18 @@ p {
     display: block;
     width:100%;
 }
-#safety-care {
+#footer {
+    padding:40px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background: url("trianglify.png");
-    width: 100%;
-    height: 100vh;
+    width: calc(100% - 80px);
 }
-#safety-care-text  {flex-grow: 1; max-width: 50%; text-align: center}
-#safety-care-text ul li {list-style-type: none;}
-#safety-care-text * {text-align: center}
-#safety-care-illus {flex-grow: 2; max-height: 100%; overflow: hidden; margin:20px;}
+#footer #logo_home {
+    height: 150px;
+}
 
 .image-bkg {
     background-position: center;

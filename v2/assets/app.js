@@ -45,3 +45,18 @@ window.addEventListener('scroll', function(e) {
         document.getElementById('menu').classList.remove('scrolled');
     }
 });
+
+var burger = document.getElementById('burger');
+var closeButton = document.getElementById('closeButton');
+var menuMobile = document.getElementById('menu-mobile');
+
+burger.addEventListener('click', function() {
+    menuMobile.classList.add('open');
+})
+
+closeButton.addEventListener('click', function() {
+    menuMobile.classList.remove('open');
+})
+
+var activeLink = document.getElementById(location.pathname.split('/').pop().replace('.html', ''));
+activeLink.classList.add('active');

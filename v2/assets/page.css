@@ -36,12 +36,11 @@ html {
 .green, a.green {
     color: var(--green);
 }
+.orange, a.orange {
+    color: var(--yellow);
+}
 #menu {
     font-family: 'Kodchasan', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top:0;
     left:0;
@@ -49,10 +48,18 @@ html {
     padding: 10px;
     background-color: white;
     box-shadow: 1px 1px 5px var(--text);
-    color: white;
     transition: all 1s;
 }
-#menu a {
+#menu .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu #burger {
+    font-size: 32px;
+}
+#menu a,  #menu-mobile a {
     color: var(--darkGrey);
     text-decoration: none;
 }
@@ -64,11 +71,11 @@ html {
 #menu a.active > i {
     color: var(--green)
 }
-#menu #back {
+#menu .back {
     height: 60px;
     transition: height 1s;
 }
-#menu #back img {
+#menu .back img {
     height: 60px;
     transition: height 1s;
 }
@@ -76,8 +83,8 @@ html {
     width: calc(100% - 4px);
     padding: 2px;
 }
-#menu.scrolled #back {height: 30px;}
-#menu.scrolled #back img {
+#menu.scrolled .back {height: 30px;}
+#menu.scrolled .back img {
     height:30px;
 }
 #menu #contact {
@@ -85,6 +92,38 @@ html {
 }
 #menu.hidden {
     opacity: 0;
+}
+#menu-mobile {
+    position: fixed;
+    display: flex;
+    right:-1000px;
+    top:0;
+    width:80%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    font-size: 48px;
+    transition: right 250ms;
+}
+#menu-mobile.open {
+    right:0;
+}
+#menu-mobile a {
+    margin:10px;
+}
+#closeButton {
+    position:relative;
+    left: -40px;
+}
+#closeButton .icon {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: 1px 1px 5px var(--text);
 }
 
 .content {
@@ -102,6 +141,7 @@ html {
 @media screen and (max-device-width: 540px) {
     .block {
         flex-direction: column;
+        max-width: 95%;
     }
     .block > .text {
         order: 1;
@@ -113,4 +153,7 @@ html {
 
 .margin-top-10 {
     margin-top:10px;
+}
+@media screen and (min-device-width: 540px) {
+    #menu-mobile {display: none}
 }
